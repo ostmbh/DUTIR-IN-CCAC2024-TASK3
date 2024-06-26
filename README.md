@@ -70,7 +70,7 @@ weighted avg     0.7057    0.6835    0.6728      1703
 基于[Firefly](https://github.com/yangjianxin1/Firefly)对[Qwen2](https://github.com/QwenLM/Qwen2)模型进行微调，采用如下的prompt策略，并使用硬投票进行汇总：
 ### 1.SFT
 训练参数及数据见/task3/models/sft
-'''
+```
 llm sft/qwen1.5-7b
               precision    recall  f1-score   support
 
@@ -83,7 +83,7 @@ llm sft/qwen1.5-7b
     accuracy                         0.9184      1703
    macro avg     0.8383    0.8469    0.8404      1703
 weighted avg     0.9203    0.9184    0.9184      1703
-'''
+```
 ### 2.嵌入性别SFT
 训练参数及数据见/task3/models/sft_with_gender
 ```
@@ -134,13 +134,21 @@ weighted avg     0.9223    0.9225    0.9206      1703
 ```
 ### 5.嵌入标签解释SFT
 训练参数及数据见/task3/models/sft_with_def
+
 使用如下prompt格式对大模型指令微调：
+
 请从”喜“、”哀“、”惊“、”恐“、”怒“五种情感中对以下推文进行情感分类，其中情感定义如下：
+
 ”喜“：快乐；高兴；愉悦；
+
 ”哀“：悲痛；悲伤；
+
 ”惊“：吃惊；惊奇；惊喜；惊怒；感慨
+
 ”恐“：严重害怕；恐惧；担忧
+
 ”怒“：发怒；生气；恼怒；愤怒；
+
 ```
 llm sft with def/qwen1.5
              precision    recall  f1-score   support
