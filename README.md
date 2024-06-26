@@ -45,7 +45,7 @@ $F1_{macro} = \frac{1}{N} \sum_{i=1}^{N} F1_i$
     用户对于文本 $x$ 的情感 $y = f(x, u)$
 ## baselines
 ### 1.基于bert-base-chinese预训练模型进行微调
-https://github.com/shuxinyin/Chinese-Text-Classification/tree/master/bert_classification
+参考https://github.com/shuxinyin/Chinese-Text-Classification/tree/master/bert_classification
 ```
 baseline/bert-base-chinese/raw data/100 epoch/lr 0.005
 loss: 0.7072446474432945
