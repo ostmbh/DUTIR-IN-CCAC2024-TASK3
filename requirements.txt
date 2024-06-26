@@ -3,6 +3,7 @@ json
 copy
 loguru==0.7.2
 transformers==4.37.0
+modelscope
 peft==0.11.1
 collections
 glob
