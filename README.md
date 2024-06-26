@@ -66,3 +66,6 @@ llm zero-shot/qwen1.5-7b/5 epoch
    macro avg     0.6314    0.5485    0.5215      1703
 weighted avg     0.7057    0.6835    0.6728      1703
 ```
+## Acknowledgements
+
+- This project uses [Chinese-Text-Classification]([https://github.com/username/repository](https://github.com/shuxinyin/Chinese-Text-Classification/tree/master/bert_classification)) and [Firefly]([https://github.com/yangjianxin1/Firefly))
